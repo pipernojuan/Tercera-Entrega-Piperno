@@ -66,15 +66,21 @@
 // }
 
 body{
+    .contacto1{
+        margin-top: 150px;
+        margin-bottom: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
     .formul{
-        margin-top: 250px;
+        margin-top: 10px;
         margin-bottom: 200px;
         margin-left: 20px;
         margin-right: 20px;
         .card-body{
             background-color: #ffffff;
             body.dark &{
-                background-color: rgba(146, 37, 37, 0.9);
+                background-color: rgba(0, 0, 0, 0.9);
         }
     }
     .bg-info{

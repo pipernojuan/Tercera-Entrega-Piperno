@@ -377,15 +377,21 @@ main .social-fixed {
     background: none;
     color: #fff; }
 
+body .contacto1 {
+  margin-top: 150px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  margin-right: 20px; }
+
 body .formul {
-  margin-top: 250px;
+  margin-top: 10px;
   margin-bottom: 200px;
   margin-left: 20px;
   margin-right: 20px; }
   body .formul .card-body {
     background-color: #ffffff; }
     body.dark body .formul .card-body {
-      background-color: rgba(146, 37, 37, 0.9); }
+      background-color: rgba(0, 0, 0, 0.9); }
   body .formul .bg-info {
     background-color: #034951 !important; }
     body .formul .bg-info h3 {
