@@ -1,10 +1,10 @@
 .parrafo {
     color: #000000;
-    font-family: 'Poppins', sans-serif;
+    font-family: $fuente1;
     font-size: 20px;
     line-height: 1.6;
     margin: 20px;
     padding: 10px;
-    border: solid 10px #034951;
+    border: solid 10px $color1;
     border-radius: 30%;
 }

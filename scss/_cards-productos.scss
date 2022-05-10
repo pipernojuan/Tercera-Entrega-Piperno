@@ -1,7 +1,7 @@
 .row {
     --bs-gutter-x:0rem;
     .card{
-        background-color: #034951;
+        background-color: $color1;
         border: none;
         body.dark &{
             background-color: #000000c4;
@@ -15,22 +15,22 @@
     }
     .colorcard {
     color: #000000;
-    background-color: #d77800;
+    background-color: $color2;
     border-color: #000000;
         body.dark &{
-            background-color: #034951;
+            background-color: $color1;
             color: rgb(0, 0, 0);
         }
         &:hover {
         color: #ffffff;
         background-color: #000000;
-        border-color: #034951;
+        border-color: $color1;
         text-transform: uppercase;
         cursor: url(../media/churro2.jpg), auto;
             body.dark &{
-                color: #d77800;
+                color: $color2;
                 background-color: #000000;
-                border-color: #034951;
+                border-color: $color1;
             }
         }
     }

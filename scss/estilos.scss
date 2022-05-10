@@ -3,6 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+// Variables
+$fuente1: 'Poppins', sans-serif;
+$color1: #034951;
+$color2: #d77800;
+$color3: rgba(0, 0, 0, 0.9);
+$colorredes: gray;
+
 // Imports
 @import "animaciones";
 @import "header";
@@ -19,12 +27,6 @@
 @import "contacto";
 @import "sucursales";
 @import "historia";
-
-// Variables
-$fuente1: 'Poppins', sans-serif;
-$color1: #034951;
-$color2: #d77800;
-$colorredes: gray;
 
 
 

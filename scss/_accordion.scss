@@ -7,11 +7,11 @@
     display: inline-block;
     .accordion-button {
         color: white;
-        background-color: #034951;
-        font-family: 'Poppins', sans-serif;
+        background-color: $color1;
+        font-family: $fuente1;
         &:not(.collapsed) {
             color: #000000;
-            background-color: #d77800;
+            background-color: $color2;
         }
         &:focus {
             border-color: darkblue;
@@ -19,7 +19,7 @@
     }
     .accordion-body {
         background-color: rgba(255, 255, 255, 0.808);
-        color: #034951;
+        color: $color1;
     }
     .collapse:not(.show){
         cursor: url(../media/churro2.jpg), auto;

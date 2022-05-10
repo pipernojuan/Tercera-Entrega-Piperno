@@ -1,3 +1,4 @@
+
 body{
     .contacto1{
         margin-top: 150px;
@@ -13,11 +14,11 @@ body{
         .card-body{
             background-color: #ffffff;
             body.dark &{
-                background-color: rgba(0, 0, 0, 0.9);
+                background-color: $color3;
         }
     }
     .bg-info{
-        background-color: #034951!important;
+        background-color: $color1 !important;
         h3{
             color: white;
         }
@@ -31,7 +32,7 @@ body{
         }
     .text-center{
         .btn-info{
-            background-color: #034951;
+            background-color: $color1;
             }
         }
     }
