@@ -1,0 +1,37 @@
+.row {
+    --bs-gutter-x:0rem;
+    .card{
+        background-color: #034951;
+        border: none;
+        body.dark &{
+            background-color: #000000c4;
+        }
+        p{
+            color: white;
+            body.dark &{
+                color:#ffffff;
+            }
+        }
+    }
+    .colorcard {
+    color: #000000;
+    background-color: #d77800;
+    border-color: #000000;
+        body.dark &{
+            background-color: #034951;
+            color: rgb(0, 0, 0);
+        }
+        &:hover {
+        color: #ffffff;
+        background-color: #000000;
+        border-color: #034951;
+        text-transform: uppercase;
+        cursor: url(../media/churro2.jpg), auto;
+            body.dark &{
+                color: #d77800;
+                background-color: #000000;
+                border-color: #034951;
+            }
+        }
+    }
+}

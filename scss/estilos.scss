@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// Imports
+@import "animaciones";
+@import "header";
+@import "logo";
+@import "carrusel";
+@import "diferentes-h";
+@import "parrafoindex";
+@import "redes";
+@import "galeria-churros";
+@import "cards-productos";
+@import "accordion";
+@import "responsive";
+@import "switches";
+@import "contacto";
+@import "sucursales";
+@import "historia";
+
+// Variables
+$fuente1: 'Poppins', sans-serif;
+$color1: #034951;
+$color2: #d77800;
+$colorredes: gray;
+
+
+
+body{
+    background: radial-gradient(circle, rgba(216, 119, 2, 1) 0%, rgba(254, 180, 85, 1) 18%);
+    cursor: url(../media/churro2.jpg), auto;
+    text-align: center;
+    margin: auto;
+    transition: .3s ease all;
+    a{
+        cursor: url(../media/churro2.jpg), auto;
+    }
+    span{
+        cursor: url(../media/churro2.jpg), auto;
+    }
+    &.dark{
+        background: rgba(0, 0, 0, 0.856);
+    }
+}
+
+footer{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    background-color: black;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    display:inline-block;
+    width: 100%;
+    .botonfinal{
+        font-family: 'Poppins', sans-serif;
+        text-decoration: none;
+        display: block;
+    }
+}
+
+

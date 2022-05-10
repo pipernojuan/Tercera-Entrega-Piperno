@@ -1,0 +1,53 @@
+h3{
+    width: fit-content;
+    margin: 0 auto;
+    color: #034951;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    transition: all 300ms ease-in-out;
+    body.dark &{
+        color: rgba(216, 119, 2, 0.856);
+    }
+    &:hover {
+        transform: scale(1.2);
+        color: white;
+        }
+    &:after {
+        content: "";
+        position: absolute;
+        width: 120px;
+        height: 3px;
+        background-color: currentColor;
+        top: 0.6em;
+        right: -140px;
+        transform: scale(0);
+        transition: all 0.2s ease-in;
+        }
+    &:hover::before {
+        transform: scale(1);
+        }
+    &:before {
+        content: "";
+        position: absolute;
+        width: 120px;
+        height: 3px;
+        background-color: currentColor;
+        top: 0.6em;
+        left: -140px;
+        transform: scale(0);
+        transition: all 0.2s ease-in;
+        }
+    &:hover:after {
+        transform: scale(1);
+        }
+}
+
+h5 {
+    margin-top: 15px;
+    float: center;
+    color: rgba(216, 119, 2, 0.856);
+}

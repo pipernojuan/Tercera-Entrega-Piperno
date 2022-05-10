@@ -1,0 +1,467 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* Animations */
+main .wow {
+  display: block;
+  flex-direction: row; }
+
+header {
+  display: flex; }
+  header .redes {
+    width: 100%; }
+    header .redes .elmenu {
+      flex-wrap: wrap; }
+      header .redes .elmenu .bg-light {
+        background-color: rgba(0, 0, 0, 0.9) !important; }
+      header .redes .elmenu .navbar {
+        position: fixed;
+        z-index: 1030;
+        width: 100%; }
+      header .redes .elmenu .navbar-light {
+        color: #d77800;
+        font-family: 'Poppins', sans-serif; }
+        header .redes .elmenu .navbar-light .navbar-toggler {
+          border-color: #a2a3a3;
+          background-color: #5c5c5c; }
+          header .redes .elmenu .navbar-light .navbar-toggler:focus {
+            box-shadow: 0 0 0 0.25rem; }
+        header .redes .elmenu .navbar-light .navbar-nav {
+          color: #d77800;
+          font-family: 'Poppins', sans-serif; }
+        header .redes .elmenu .navbar-light .nav-link.active {
+          color: #ffffff;
+          font-family: 'Poppins', sans-serif; }
+        header .redes .elmenu .navbar-light .nav-item {
+          margin: 5px;
+          padding: 5px;
+          flex-wrap: wrap;
+          color: #d77800; }
+          header .redes .elmenu .navbar-light .nav-item .nav-link {
+            margin: 10px;
+            width: fit-content;
+            flex-wrap: wrap;
+            transition: all 300ms;
+            font-family: 'Poppins', sans-serif;
+            font-size: 25px; }
+            header .redes .elmenu .navbar-light .nav-item .nav-link:hover {
+              transform: scale(1.1);
+              color: #034951; }
+              body.dark header .redes .elmenu .navbar-light .nav-item .nav-link:hover {
+                color: rgba(216, 119, 2, 0.856); }
+
+header .redes .elmenu .navbar .logo {
+  width: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  transition: all 300ms; }
+  header .redes .elmenu .navbar .logo:hover {
+    transform: scale(1.1); }
+
+main .carrusel {
+  display: inline-block;
+  width: 100%;
+  padding-top: 6px; }
+  main .carrusel [type=button]:not(:disabled), main .carrusel [type=reset]:not(:disabled), main .carrusel [type=submit]:not(:disabled), main .carrusel button:not(:disabled) {
+    cursor: url(../media/churro2.jpg), auto; }
+
+h3 {
+  width: fit-content;
+  margin: 0 auto;
+  color: #034951;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  transition: all 300ms ease-in-out; }
+  body.dark h3 {
+    color: rgba(216, 119, 2, 0.856); }
+  h3:hover {
+    transform: scale(1.2);
+    color: white; }
+  h3:after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    background-color: currentColor;
+    top: 0.6em;
+    right: -140px;
+    transform: scale(0);
+    transition: all 0.2s ease-in; }
+  h3:hover::before {
+    transform: scale(1); }
+  h3:before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    background-color: currentColor;
+    top: 0.6em;
+    left: -140px;
+    transform: scale(0);
+    transition: all 0.2s ease-in; }
+  h3:hover:after {
+    transform: scale(1); }
+
+h5 {
+  margin-top: 15px;
+  float: center;
+  color: rgba(216, 119, 2, 0.856); }
+
+.parrafo {
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  margin: 20px;
+  padding: 10px;
+  border: solid 10px #034951;
+  border-radius: 30%; }
+
+footer .red {
+  display: none;
+  justify-content: center;
+  flex-wrap: wrap; }
+  footer .red .fb {
+    font-size: 20px;
+    color: gray;
+    margin: 3px;
+    padding: 5px;
+    transition: all 300ms; }
+    footer .red .fb:hover {
+      transform: scale(1.23); }
+  footer .red .ig {
+    font-size: 20px;
+    color: gray;
+    margin: 3px;
+    padding: 5px;
+    transition: all 300ms; }
+    footer .red .ig:hover {
+      transform: scale(1.23); }
+  footer .red .delivery {
+    font-size: 17px;
+    color: gray;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    transition: all 300ms; }
+    footer .red .delivery:hover {
+      transform: scale(1.23); }
+
+main .social-fixed {
+  position: fixed;
+  bottom: 0;
+  margin-left: 5px;
+  margin-bottom: 7px;
+  z-index: 1030; }
+  main .social-fixed .list {
+    list-style: none;
+    color: gray; }
+    main .social-fixed .list li {
+      padding-top: 15px;
+      transition: all 300ms; }
+      main .social-fixed .list li:hover {
+        transform: scale(1.23); }
+      main .social-fixed .list li a {
+        color: gray;
+        list-style: none;
+        text-decoration: none; }
+        main .social-fixed .list li a:hover {
+          color: #034951; }
+          body.dark main .social-fixed .list li a:hover {
+            color: rgba(216, 119, 2, 0.856); }
+
+.gallery-conteiner {
+  max-width: 1820px;
+  margin: auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px; }
+  .gallery-conteiner .gallery-img {
+    width: 100%;
+    filter: drop-shadow(7px 7px 4px black); }
+
+.row {
+  --bs-gutter-x:0rem; }
+  .row .card {
+    background-color: #034951;
+    border: none; }
+    body.dark .row .card {
+      background-color: #000000c4; }
+    .row .card p {
+      color: white; }
+      body.dark .row .card p {
+        color: #ffffff; }
+  .row .colorcard {
+    color: #000000;
+    background-color: #d77800;
+    border-color: #000000; }
+    body.dark .row .colorcard {
+      background-color: #034951;
+      color: black; }
+    .row .colorcard:hover {
+      color: #ffffff;
+      background-color: #000000;
+      border-color: #034951;
+      text-transform: uppercase;
+      cursor: url(../media/churro2.jpg), auto; }
+      body.dark .row .colorcard:hover {
+        color: #d77800;
+        background-color: #000000;
+        border-color: #034951; }
+
+/* Accordion */
+.acord {
+  padding-top: 15px;
+  margin-top: 15px;
+  width: 80%;
+  display: inline-block; }
+  .acord .accordion-button {
+    color: white;
+    background-color: #034951;
+    font-family: 'Poppins', sans-serif; }
+    .acord .accordion-button:not(.collapsed) {
+      color: #000000;
+      background-color: #d77800; }
+    .acord .accordion-button:focus {
+      border-color: darkblue; }
+  .acord .accordion-body {
+    background-color: rgba(255, 255, 255, 0.808);
+    color: #034951; }
+  .acord .collapse:not(.show) {
+    cursor: url(../media/churro2.jpg), auto; }
+
+/* Responsive */
+@media only screen and (max-width: 1850px) {
+  .red {
+    flex-direction: row; }
+  .nav-link {
+    font-size: 23px !important; } }
+
+@media only screen and (max-width: 1555px) {
+  .nav-link {
+    font-size: 12px !important; } }
+
+@media only screen and (max-width: 1170px) {
+  .gallery-conteiner {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 80%; }
+  main .carrusel {
+    width: 90%; }
+  main .social-fixed {
+    display: none; }
+  .fb {
+    font-size: 30px; }
+  .ig {
+    font-size: 25px; }
+  .delivery {
+    font-size: 25px; }
+  .parrafo {
+    font-size: 10px; }
+  h5 {
+    font-size: 15px; }
+  .caja {
+    width: 700px;
+    height: 600px;
+    margin: 40px;
+    display: inline-block; } }
+
+@media only screen and (max-width: 992px) {
+  .elmenu {
+    justify-content: center; }
+  .bg-light {
+    background-color: #ffffff !important; }
+  main .carrusel {
+    width: 100%; } }
+
+.caja {
+  width: 400px;
+  height: 300px;
+  margin: 40px;
+  display: inline-block; }
+
+.red {
+  display: inline-flex !important;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+@media only screen and (max-width: 500px) {
+  .gallery-conteiner {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 80%; }
+  .items li {
+    font-size: 20px; }
+  h3 {
+    font-size: 20px; }
+  .nuestra {
+    font-size: 15px; }
+  h5 {
+    font-size: 10px; }
+  .red {
+    display: inline-flex !important;
+    justify-content: center;
+    flex-wrap: wrap; }
+  main .carrusel {
+    width: 100%; }
+  header {
+    flex-direction: column;
+    flex-basis: 100%; }
+  .nuestrasalsa {
+    width: 70%; }
+  .caja {
+    width: 300px;
+    height: 158px;
+    margin: 20px;
+    object-fit: cover; }
+  .botonfinal {
+    font-size: 10px; }
+  .parrafo {
+    font-size: 10px; } }
+
+@media only screen and (max-width: 281px) {
+  .caja {
+    width: 250px;
+    height: 180px;
+    margin: 20px;
+    object-fit: cover; }
+  .red {
+    display: inline-flex !important;
+    justify-content: center;
+    flex-wrap: wrap; }
+  main .carrusel {
+    width: 100%; } }
+
+.switch {
+  background: #343D5B;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+  margin-right: 35px; }
+  .switch::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #F1F1F1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: .3s ease all;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+    cursor: url(../media/churro2.jpg), auto; }
+  .switch.active {
+    background: orange;
+    color: #000; }
+    .switch.active::after {
+      right: 0;
+      left: unset; }
+  .switch span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: #fff; }
+
+body .formul {
+  margin-top: 250px;
+  margin-bottom: 200px;
+  margin-left: 20px;
+  margin-right: 20px; }
+  body .formul .card-body {
+    background-color: #ffffff; }
+    body.dark body .formul .card-body {
+      background-color: rgba(146, 37, 37, 0.9); }
+  body .formul .bg-info {
+    background-color: #034951 !important; }
+    body .formul .bg-info h3 {
+      color: white; }
+    body .formul .bg-info p {
+      color: white;
+      font-size: 1rem; }
+  body .formul .text-info {
+    color: #000000 !important; }
+  body .formul .text-center .btn-info {
+    background-color: #034951; }
+
+.sucus {
+  margin-top: 50px;
+  padding-top: 50px; }
+
+.mapa1 {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 0;
+  filter: brightness(70%); }
+
+.mapa2 {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 0;
+  filter: brightness(70%); }
+
+.historiafoto {
+  margin-top: 185px;
+  padding-top: 185px;
+  margin-bottom: 385px;
+  padding-bottom: 285px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #ffffff;
+  font-size: 2rem; }
+
+.fotofondo {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7) 100%, rgba(0, 0, 0, 0.336) 100%), url(../media/twochurrosfoto1.jpg);
+  background-size: cover;
+  font-weight: bolder;
+  text-align: center;
+  margin: auto;
+  background-repeat: no-repeat; }
+
+.margenes {
+  font-size: 3rem;
+  color: #d77800;
+  margin-top: 45px; }
+
+body {
+  background: radial-gradient(circle, #d87702 0%, #feb455 18%);
+  cursor: url(../media/churro2.jpg), auto;
+  text-align: center;
+  margin: auto;
+  transition: .3s ease all; }
+  body a {
+    cursor: url(../media/churro2.jpg), auto; }
+  body span {
+    cursor: url(../media/churro2.jpg), auto; }
+  body.dark {
+    background: rgba(0, 0, 0, 0.856); }
+
+footer {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 20px;
+  background-color: black;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  display: inline-block;
+  width: 100%; }
+  footer .botonfinal {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    display: block; }

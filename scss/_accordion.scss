@@ -1,0 +1,27 @@
+/* Accordion */
+
+.acord{
+    padding-top: 15px;
+    margin-top: 15px;
+    width: 80%;
+    display: inline-block;
+    .accordion-button {
+        color: white;
+        background-color: #034951;
+        font-family: 'Poppins', sans-serif;
+        &:not(.collapsed) {
+            color: #000000;
+            background-color: #d77800;
+        }
+        &:focus {
+            border-color: darkblue;
+        }
+    }
+    .accordion-body {
+        background-color: rgba(255, 255, 255, 0.808);
+        color: #034951;
+    }
+    .collapse:not(.show){
+        cursor: url(../media/churro2.jpg), auto;
+    }
+}
