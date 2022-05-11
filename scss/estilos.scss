@@ -10,6 +10,23 @@ $color1: #034951;
 $color2: #d77800;
 $color3: rgba(0, 0, 0, 0.9);
 $colorredes: gray;
+$fondobody: false;
+$margin: 3px;
+$delivery-margin: 5px;
+$padding: 5px;
+
+
+// Mixin
+@mixin RedesFooter($cambio) {
+    font-size: 20px;
+    margin: $cambio;
+    padding: $padding;
+    color: $colorredes;
+    transition: all 300ms;
+    &:hover {
+        transform: scale(1.23);
+        }
+}
 
 // Imports
 @import "animaciones";
@@ -31,7 +48,11 @@ $colorredes: gray;
 
 
 body{
-    background: radial-gradient(circle, rgba(216, 119, 2, 1) 0%, rgba(254, 180, 85, 1) 18%);
+    @if $fondobody == false {
+        background: radial-gradient(circle, rgba(216, 119, 2, 1) 0%, rgba(254, 180, 85, 1) 18%);
+        } @else {
+            background: red;
+        }
     cursor: url(../media/churro2.jpg), auto;
     text-align: center;
     margin: auto;
@@ -62,5 +83,3 @@ footer{
         display: block;
     }
 }
-
-

@@ -24,15 +24,7 @@ footer{
                 }
             }
             .delivery {
-                font-size: 17px;
-                color: $colorredes;
-                margin: 5px;
-                padding: 5px;
-                text-align: center;
-                transition: all 300ms;
-                &:hover {
-                transform: scale(1.23);
-                }
+                @include RedesFooter($delivery-margin);
             }
         }
 }   

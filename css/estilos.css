@@ -144,11 +144,10 @@ footer .red {
     footer .red .ig:hover {
       transform: scale(1.23); }
   footer .red .delivery {
-    font-size: 17px;
-    color: gray;
+    font-size: 20px;
     margin: 5px;
     padding: 5px;
-    text-align: center;
+    color: gray;
     transition: all 300ms; }
     footer .red .delivery:hover {
       transform: scale(1.23); }
@@ -408,14 +407,7 @@ body .formul {
   margin-top: 50px;
   padding-top: 50px; }
 
-.mapa1 {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  z-index: 0;
-  filter: brightness(70%); }
-
-.mapa2 {
+.mapa1, .mapa2 {
   position: relative;
   width: 100%;
   min-height: 100vh;
